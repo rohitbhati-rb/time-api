@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "6956a0e3-ae31-4616-a864-898d74cdfb33",
+		"name": "Time API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Current Time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/time",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time in given time zone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/time?tz=Asia/Kolkata",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"time"
+					],
+					"query": [
+						{
+							"key": "tz",
+							"value": "Asia/Kolkata"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get time in multiple time zones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/time?tz=Asia/Kolkata,America/New_York,America/Los_Angeles,Asia/Dubai",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"time"
+					],
+					"query": [
+						{
+							"key": "tz",
+							"value": "Asia/Kolkata,America/New_York,America/Los_Angeles,Asia/Dubai"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
